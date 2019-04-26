@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+        <array key="SanFranciscoDisplay-Semibold.otf">
+            <string>SanFranciscoDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScoreView" customModule="PSTAR_Prep" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBottomMargin" destination="f0J-Jp-stM" id="eUP-Xg-cqW"/>
+                <outlet property="btnTest" destination="Xy9-b0-Ffb" id="F2W-Zx-Hp8"/>
+                <outlet property="childView" destination="BdC-vU-ZTv" id="ikx-Oe-S69"/>
+                <outlet property="circleView" destination="g2S-HI-eA4" id="FvW-WV-ZRW"/>
+                <outlet property="content" destination="iN0-l3-epB" id="cO2-zn-UjC"/>
+                <outlet property="lblMessage" destination="jof-Sk-oUM" id="1xa-gy-KPq"/>
+                <outlet property="lblPercent" destination="Kb4-kj-tQL" id="7sV-iV-4hl"/>
+                <outlet property="lblTitle" destination="NmP-ox-gyf" id="IRe-0O-GNS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="380"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmP-ox-gyf" customClass="KernLabel" customModule="PSTAR_Prep" customModuleProvider="target">
+                    <rect key="frame" x="139" y="23" width="48" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2S-HI-eA4">
+                    <rect key="frame" x="108" y="87" width="110" height="110"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdC-vU-ZTv">
+                            <rect key="frame" x="2" y="2" width="106" height="106"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kb4-kj-tQL" customClass="KernLabel" customModule="PSTAR_Prep" customModuleProvider="target">
+                                    <rect key="frame" x="41" y="27.5" width="24.5" height="51"/>
+                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="42"/>
+                                    <color key="textColor" red="0.19607843137254902" green="0.21568627450980393" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
+                                            <real key="value" value="-2.1000000000000001"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9U-pf-OBH">
+                                    <rect key="frame" x="66.5" y="36.5" width="14" height="22"/>
+                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="18"/>
+                                    <color key="textColor" red="0.52941176470588236" green="0.5490196078431373" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Kb4-kj-tQL" firstAttribute="centerX" secondItem="BdC-vU-ZTv" secondAttribute="centerX" id="6IP-eI-34V"/>
+                                <constraint firstAttribute="height" constant="106" id="8Hm-Nr-9cr"/>
+                                <constraint firstItem="M9U-pf-OBH" firstAttribute="top" secondItem="Kb4-kj-tQL" secondAttribute="top" constant="9" id="G6c-Hg-Buy"/>
+                                <constraint firstItem="Kb4-kj-tQL" firstAttribute="centerY" secondItem="BdC-vU-ZTv" secondAttribute="centerY" id="PNn-Cu-kST"/>
+                                <constraint firstAttribute="width" secondItem="BdC-vU-ZTv" secondAttribute="height" multiplier="1:1" id="aL8-Ny-OPA"/>
+                                <constraint firstItem="M9U-pf-OBH" firstAttribute="leading" secondItem="Kb4-kj-tQL" secondAttribute="trailing" constant="1" id="qAO-9c-7Xd"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="g2S-HI-eA4" secondAttribute="height" multiplier="1:1" id="LFF-LE-bZX"/>
+                        <constraint firstItem="BdC-vU-ZTv" firstAttribute="centerX" secondItem="g2S-HI-eA4" secondAttribute="centerX" id="Yhw-Cf-Wua"/>
+                        <constraint firstAttribute="height" constant="110" id="a3n-uu-QY8"/>
+                        <constraint firstItem="BdC-vU-ZTv" firstAttribute="centerY" secondItem="g2S-HI-eA4" secondAttribute="centerY" id="pWP-t2-xdU"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jof-Sk-oUM" customClass="KernLabel" customModule="PSTAR_Prep" customModuleProvider="target">
+                    <rect key="frame" x="20" y="217" width="286" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="aqj-mn-FgS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xy9-b0-Ffb" customClass="KernButton" customModule="PSTAR_Prep" customModuleProvider="target">
+                    <rect key="frame" x="29" y="306" width="277" height="54"/>
+                    <color key="backgroundColor" red="0.027450980392156862" green="0.70980392156862748" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="YF8-ly-YFW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="18"/>
+                    <state key="normal" title="Take Test">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
+                            <real key="value" value="-0.10000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Xy9-b0-Ffb" secondAttribute="trailing" constant="20" id="2NS-qR-AuV"/>
+                <constraint firstItem="NmP-ox-gyf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EzT-qW-1mn"/>
+                <constraint firstItem="g2S-HI-eA4" firstAttribute="top" secondItem="NmP-ox-gyf" secondAttribute="bottom" constant="40" id="Jip-8R-NXR"/>
+                <constraint firstItem="jof-Sk-oUM" firstAttribute="top" secondItem="g2S-HI-eA4" secondAttribute="bottom" constant="20" id="Lit-9q-iam"/>
+                <constraint firstItem="g2S-HI-eA4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="b0e-43-3wd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Xy9-b0-Ffb" secondAttribute="bottom" constant="20" id="f0J-Jp-stM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jof-Sk-oUM" secondAttribute="trailing" constant="20" id="gbB-Pw-ijH"/>
+                <constraint firstItem="NmP-ox-gyf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="23" id="kfb-tt-tMd"/>
+                <constraint firstItem="Xy9-b0-Ffb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="29" id="nCF-YT-oVO"/>
+                <constraint firstItem="jof-Sk-oUM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="xFK-8k-gZb"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-35.200000000000003" y="77.361319340329842"/>
+        </view>
+    </objects>
+</document>

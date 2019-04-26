@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Medium.otf">
+            <string>SanFranciscoDisplay-Medium</string>
+        </array>
+        <array key="SanFranciscoDisplay-Semibold.otf">
+            <string>SanFranciscoDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionView" customModule="PSTAR_Prep" customModuleProvider="target">
+            <connections>
+                <outlet property="content" destination="iN0-l3-epB" id="HFt-CN-GKe"/>
+                <outlet property="lblQuestion" destination="eh2-2u-pFC" id="Wwl-pE-BAE"/>
+                <outlet property="lblResult" destination="fyP-Cx-fbC" id="NDp-lp-hDd"/>
+                <outlet property="lblTitle" destination="I7N-wa-2N5" id="mc1-Pz-sqG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="152"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1 / 18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7N-wa-2N5">
+                    <rect key="frame" x="171.5" y="19" width="75.5" height="14"/>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="12"/>
+                    <color key="textColor" red="0.63529411764705879" green="0.65490196078431373" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eh2-2u-pFC" customClass="KernLabel" customModule="PSTAR_Prep" customModuleProvider="target">
+                    <rect key="frame" x="20" y="38" width="378" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="JIZ-uD-5E1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="20"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.21568627450980393" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
+                            <real key="value" value="-0.40000000000000002"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyP-Cx-fbC" customClass="KernLabel" customModule="PSTAR_Prep" customModuleProvider="target">
+                    <rect key="frame" x="172.5" y="58" width="73" height="36"/>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
+                            <real key="value" value="0.59999999999999998"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fyP-Cx-fbC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2KE-UE-TcE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eh2-2u-pFC" secondAttribute="trailing" constant="20" id="4hm-n5-QWp"/>
+                <constraint firstItem="eh2-2u-pFC" firstAttribute="top" secondItem="I7N-wa-2N5" secondAttribute="bottom" constant="5" id="LkZ-cJ-VWF"/>
+                <constraint firstItem="I7N-wa-2N5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WFA-7a-1Kg"/>
+                <constraint firstItem="eh2-2u-pFC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="h4Z-1c-cH8"/>
+                <constraint firstItem="fyP-Cx-fbC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="pch-Ut-T84"/>
+                <constraint firstItem="I7N-wa-2N5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="19" id="rtX-QL-n0c"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="80" y="36.881559220389811"/>
+        </view>
+    </objects>
+</document>

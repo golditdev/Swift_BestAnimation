@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Semibold.otf">
+            <string>SanFranciscoDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="PSTAR_Prep" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtM-uD-IOp">
+                                <rect key="frame" x="151" y="316.5" width="73" height="34"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="18"/>
+                                <state key="normal" title="Take Test"/>
+                                <connections>
+                                    <action selector="takeTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAH-fr-YqE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QtM-uD-IOp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="et0-HT-1vG"/>
+                            <constraint firstItem="QtM-uD-IOp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="utU-Py-dJh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233" y="59"/>
+        </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="IIm-Pa-4hO">
+            <objects>
+                <viewController storyboardIdentifier="LaunchViewController" id="3LS-4v-K5R" customClass="LaunchViewController" customModule="PSTAR_Prep" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O8f-5G-xA9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k1w-Au-ap4">
+                                <rect key="frame" x="0.0" y="178" width="375" height="211"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="k1w-Au-ap4" secondAttribute="height" multiplier="16:9" id="m2b-HF-6Uy"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text_pilot_life" translatesAutoresizingMaskIntoConstraints="NO" id="9om-2D-egH">
+                                <rect key="frame" x="133.5" y="599" width="108" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="OiB-1y-EBb"/>
+                                    <constraint firstAttribute="width" secondItem="9om-2D-egH" secondAttribute="height" multiplier="9:2" id="phO-Zf-7gn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The better way to prepare for the PSTAR exam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekz-71-R3e">
+                                <rect key="frame" x="25.5" y="407.5" width="324.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_title" translatesAutoresizingMaskIntoConstraints="NO" id="NNA-Vx-oeC">
+                                <rect key="frame" x="53.5" y="364.5" width="268" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NNA-Vx-oeC" secondAttribute="height" multiplier="134:19" id="MaK-uA-Zse"/>
+                                    <constraint firstAttribute="height" constant="38" id="irs-qO-h72"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2y-TR-16C">
+                                <rect key="frame" x="0.0" y="427.5" width="375" height="169.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sN-ip-YGg">
+                                        <rect key="frame" x="171.5" y="69" width="32" height="32"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="1sj-vE-D0y"/>
+                                            <constraint firstAttribute="width" constant="32" id="i64-HY-MGJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8sN-ip-YGg" firstAttribute="centerX" secondItem="e2y-TR-16C" secondAttribute="centerX" id="T0W-Pk-uxg"/>
+                                    <constraint firstItem="8sN-ip-YGg" firstAttribute="centerY" secondItem="e2y-TR-16C" secondAttribute="centerY" id="j1R-Mg-nVc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.69411764705882351" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vfK-Lg-TCc" firstAttribute="bottom" secondItem="9om-2D-egH" secondAttribute="bottom" constant="44" id="EOi-5m-ac1"/>
+                            <constraint firstItem="k1w-Au-ap4" firstAttribute="centerY" secondItem="O8f-5G-xA9" secondAttribute="centerY" constant="-50" id="Frw-de-itf"/>
+                            <constraint firstItem="k1w-Au-ap4" firstAttribute="leading" secondItem="vfK-Lg-TCc" secondAttribute="leading" id="M1Y-Ru-fC9"/>
+                            <constraint firstItem="9om-2D-egH" firstAttribute="top" secondItem="e2y-TR-16C" secondAttribute="bottom" constant="2" id="Oe0-Ej-Tjm"/>
+                            <constraint firstItem="NNA-Vx-oeC" firstAttribute="centerY" secondItem="O8f-5G-xA9" secondAttribute="centerY" constant="50" id="Tab-tr-rBc"/>
+                            <constraint firstItem="e2y-TR-16C" firstAttribute="top" secondItem="ekz-71-R3e" secondAttribute="bottom" constant="2" id="YEV-Tm-Q0j"/>
+                            <constraint firstItem="k1w-Au-ap4" firstAttribute="trailing" secondItem="vfK-Lg-TCc" secondAttribute="trailing" id="Yco-yq-ovq"/>
+                            <constraint firstItem="e2y-TR-16C" firstAttribute="leading" secondItem="vfK-Lg-TCc" secondAttribute="leading" id="gb7-GY-Aep"/>
+                            <constraint firstItem="9om-2D-egH" firstAttribute="centerX" secondItem="O8f-5G-xA9" secondAttribute="centerX" id="iKS-Ul-iXR"/>
+                            <constraint firstItem="NNA-Vx-oeC" firstAttribute="centerX" secondItem="O8f-5G-xA9" secondAttribute="centerX" id="nNE-vy-nQE"/>
+                            <constraint firstItem="ekz-71-R3e" firstAttribute="centerX" secondItem="O8f-5G-xA9" secondAttribute="centerX" id="vUL-Gb-O16"/>
+                            <constraint firstItem="vfK-Lg-TCc" firstAttribute="trailing" secondItem="e2y-TR-16C" secondAttribute="trailing" id="yiU-1R-xDO"/>
+                            <constraint firstItem="ekz-71-R3e" firstAttribute="top" secondItem="NNA-Vx-oeC" secondAttribute="bottom" constant="5" id="yrB-Yh-JX4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vfK-Lg-TCc"/>
+                    </view>
+                    <connections>
+                        <outlet property="ivLogo" destination="NNA-Vx-oeC" id="9E1-gU-D0o"/>
+                        <outlet property="lblDetails" destination="ekz-71-R3e" id="gAt-GE-UG1"/>
+                        <outlet property="loader" destination="8sN-ip-YGg" id="dJE-KE-j4I"/>
+                        <outlet property="logoBottomAnchor" destination="Tab-tr-rBc" id="g1C-im-xqM"/>
+                        <outlet property="videoView" destination="k1w-Au-ap4" id="51b-ZR-mu7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEX-8q-XQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="573.60000000000002" y="52.623688155922046"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_title" width="260" height="31"/>
+        <image name="text_pilot_life" width="98" height="14"/>
+    </resources>
+</document>
